@@ -1,0 +1,36 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <include file="struts-default.xml"/>
+    
+    <package name="util" extends="struts-default">
+        <action name="QueryAllBooks" class="util.QueryAllBooks">
+            <result >books.jsp</result>
+            <result name="login">none.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="AddBook" class="util.AddBook">
+            <result>insert.jsp</result>
+            <result name="login">add.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="AddAuthor" class="util.AddAuthor">
+            <result>insert.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="RefreshBook" class="util.RefreshBook">
+        	<result>refresh.jsp</result>
+        	<result name="login">add.jsp</result>
+        	<result name="error">error.jsp</result>
+        </action>
+        <action name="ExpressBooks" class="util.ExpressBooks">
+        	<result>show.jsp</result>
+        	<result name="error">error.jsp</result>
+        </action>
+        <action name="DeleteBook" class="util.DeleteBook">
+        	<result>delete.jsp</result>
+        	<result name="error">error.jsp</result>
+        </action>
+    </package>
+</struts>

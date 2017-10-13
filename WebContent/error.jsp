@@ -1,0 +1,15 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>失败</title>
+    </head>
+    <body>
+    	<h3>改变</h3>
+        <h3>请查看您的输入格式是否有误！ </h3>
+        <h3>请查看您的查询是否存在！ </h3>
+        <input type="button" value="返回首页" onclick="window.location.href='http://yanyu0618.applinzi.com/start.jsp';"/>
+	
+    </body>
+</html>
